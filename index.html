@@ -1,0 +1,1968 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cordeiro Energia | Engenharia e Soluções em Energia Solar em MG</title>
+  <meta name="description" content="A Cordeiro Energia oferece projetos fotovoltaicos, manutenção de usinas, armazenamento BESS e mobilidade elétrica para residências, empresas e agronegócio em Minas Gerais. Sedes em Curvelo, Montes Claros e Jaíba." />
+  <meta name="keywords" content="energia solar curvelo, energia solar montes claros, energia solar jaíba, cordeiro energia, projetos fotovoltaicos mg, manutenção usina solar, coenergy assinatura, bess baterias" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Cordeiro Energia | Energia solar inteligente para reduzir seus custos" />
+  <meta property="og:description" content="Projetos fotovoltaicos, manutenção, armazenamento e mobilidade elétrica para residências, empresas e propriedades rurais em Minas Gerais." />
+  <meta property="og:image" content="assets/hero-solar-brazil.jpg" />
+  <meta property="og:url" content="https://cordeiroenergia.com.br/" />
+  <meta name="theme-color" content="#F8F7F3" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo-symbol.png" />
+
+  <!-- Tipografia: Plus Jakarta Sans + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Schema.org para SEO Local -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Cordeiro Energia",
+    "image": "assets/hero-solar-brazil.jpg",
+    "url": "https://cordeiroenergia.com.br",
+    "telephone": "+5538997350343",
+    "email": "comercial@cordeiroenergia.com.br",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Bandeirantes, 28 - Bela Vista",
+      "addressLocality": "Curvelo",
+      "addressRegion": "MG",
+      "postalCode": "35790-000",
+      "addressCountry": "BR"
+    }
+  }
+  </script>
+
+  <script src="config.js"></script>
+
+  <style>
+    /* ============================================================
+       DESIGN SYSTEM — Institucional, Claro & Confiável
+       Cordeiro Energia · Minas Gerais
+    ============================================================ */
+    :root {
+      --bg-main: #F8F7F3;          /* Off-white quente e acolhedor */
+      --bg-white: #FFFFFF;         /* Branco puro para superfícies */
+      --bg-subtle: #F0EEE7;        /* Neutro suave para contraste leve */
+      --bg-dark-section: #16191F;  /* Grafite escuro para blocos de contraste */
+      
+      --text-main: #171A1E;        /* Grafite escuro para excelente leitura */
+      --text-body: #4B535E;        /* Cinza neutro para parágrafos */
+      --text-muted: #747D8A;       /* Texto secundário e legendas */
+      --text-light: #F3F4F6;       /* Texto sobre fundos escuros */
+      --text-light-muted: #9CA3AF;
+      
+      --cordeiro-orange: #F58220;  /* Laranja Cordeiro oficial institucional */
+      --cordeiro-orange-hover: #E06F12;
+      --cordeiro-orange-soft: rgba(245, 130, 32, 0.10);
+      
+      --border-light: #E5E1D7;     /* Bordas finas e elegantes */
+      --border-subtle: #ECE8E0;
+      
+      --font-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      
+      --radius-sm: 4px;
+      --radius-md: 8px;
+      --radius-lg: 12px;
+      
+      --shadow-subtle: 0 2px 10px rgba(0, 0, 0, 0.04);
+      --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.06);
+      
+      --transition: all 0.25s ease;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      background-color: var(--bg-main);
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--bg-main);
+      color: var(--text-body);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* Utilitários de Layout */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    .section {
+      padding: 96px 0;
+      position: relative;
+    }
+
+    .section-light {
+      background-color: var(--bg-white);
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .section-dark {
+      background-color: var(--bg-dark-section);
+      color: var(--text-light);
+    }
+
+    .section-header {
+      margin-bottom: 56px;
+    }
+
+    .section-header.center {
+      text-align: center;
+      max-width: 760px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-family: var(--font-display);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--cordeiro-orange);
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 3.5vw, 2.75rem);
+      font-weight: 800;
+      color: var(--text-main);
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+
+    .section-dark .section-title {
+      color: #FFFFFF;
+    }
+
+    .section-desc {
+      font-size: 1.08rem;
+      color: var(--text-body);
+      line-height: 1.7;
+    }
+
+    .section-dark .section-desc {
+      color: var(--text-light-muted);
+    }
+
+    /* Botões */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      font-weight: 700;
+      padding: 14px 26px;
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      text-decoration: none;
+      transition: var(--transition);
+      border: 1px solid transparent;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background-color: var(--cordeiro-orange);
+      color: #FFFFFF;
+      box-shadow: 0 4px 14px rgba(245, 130, 32, 0.25);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--cordeiro-orange-hover);
+      box-shadow: 0 6px 20px rgba(245, 130, 32, 0.35);
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      background-color: #FFFFFF;
+      color: var(--text-main);
+      border-color: var(--border-light);
+    }
+
+    .btn-outline:hover {
+      background-color: #F8F7F3;
+      border-color: var(--text-muted);
+      color: var(--text-main);
+    }
+
+    .btn-whatsapp {
+      background-color: #FFFFFF;
+      color: #128C7E;
+      border-color: #C2E7DE;
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #F0FAF7;
+      border-color: #25D366;
+      color: #075E54;
+    }
+
+    /* ============================================================
+       NAVBAR (ÚNICA LINHA, CLARA E INSTITUCIONAL)
+    ============================================================ */
+    .navbar {
+      position: sticky;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #FFFFFF;
+      border-bottom: 1px solid var(--border-subtle);
+      z-index: 1000;
+      padding: 14px 0;
+    }
+
+    .navbar-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .brand-logo-img {
+      height: 38px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .brand-name-group {
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+    }
+
+    .brand-title {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--text-main);
+      letter-spacing: -0.01em;
+    }
+
+    .brand-sub {
+      font-family: var(--font-display);
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      color: var(--cordeiro-orange);
+      margin-top: 2px;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-item a {
+      font-family: var(--font-display);
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--text-body);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .nav-item a:hover {
+      color: var(--cordeiro-orange);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-shrink: 0;
+    }
+
+    .mobile-menu-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      padding: 8px 10px;
+      cursor: pointer;
+      color: var(--text-main);
+    }
+
+    /* ============================================================
+       HERO PRINCIPAL (IMAGEM EXPANSIVA & FADE SUAVE)
+    ============================================================ */
+    .hero-section {
+      position: relative;
+      background-color: var(--bg-main);
+      min-height: 720px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      border-bottom: 1px solid var(--border-subtle);
+      width: 100%;
+    }
+
+    /* Imagem ocupando a área direita até as bordas */
+    .hero-bg-image {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 58%;
+      background-image: url('assets/hero-solar-brazil.jpg');
+      background-size: cover;
+      background-position: center right;
+      z-index: 1;
+    }
+
+    /* Fade suave entre o texto e a imagem */
+    .hero-bg-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(
+        90deg,
+        var(--bg-main) 0%,
+        var(--bg-main) 40%,
+        rgba(248, 247, 243, 0.96) 48%,
+        rgba(248, 247, 243, 0.72) 56%,
+        rgba(248, 247, 243, 0.22) 68%,
+        rgba(248, 247, 243, 0) 80%
+      );
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .hero-container {
+      position: relative;
+      z-index: 3;
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .hero-content {
+      max-width: 550px;
+    }
+
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.3rem, 4.2vw, 3.5rem);
+      font-weight: 800;
+      color: var(--text-main);
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin-bottom: 20px;
+    }
+
+    .hero-title span {
+      color: var(--cordeiro-orange);
+    }
+
+    .hero-subtitle {
+      font-size: 1.12rem;
+      color: var(--text-body);
+      line-height: 1.65;
+      margin-bottom: 34px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+
+    /* Bullets com peso visual reduzido (leves e discretos) */
+    .hero-badges-list {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+      max-width: 480px;
+    }
+
+    .hero-badge-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.83rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    .hero-badge-icon {
+      width: 14px;
+      height: 14px;
+      color: var(--cordeiro-orange);
+      opacity: 0.85;
+      flex-shrink: 0;
+    }
+
+    /* ============================================================
+       SEÇÃO INSTITUCIONAL: A EMPRESA & PILARES
+    ============================================================ */
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    .pillar-card {
+      background-color: #FFFFFF;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 28px 24px;
+      box-shadow: var(--shadow-subtle);
+      transition: var(--transition);
+    }
+
+    .pillar-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--cordeiro-orange);
+    }
+
+    .pillar-num {
+      font-family: var(--font-display);
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: var(--cordeiro-orange);
+      margin-bottom: 12px;
+      display: inline-block;
+    }
+
+    .pillar-title {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+
+    .pillar-desc {
+      font-size: 0.92rem;
+      color: var(--text-body);
+      line-height: 1.6;
+    }
+
+    /* ============================================================
+       SOLUÇÕES E SERVIÇOS (FOTOS REAIS & CONCRETAS)
+    ============================================================ */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .service-card {
+      background-color: #FFFFFF;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-subtle);
+      transition: var(--transition);
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-card);
+      border-color: #D3CDC2;
+    }
+
+    .service-image-box {
+      width: 100%;
+      height: 210px;
+      position: relative;
+      overflow: hidden;
+      background-color: #EAE6DD;
+    }
+
+    .service-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .service-card:hover .service-image {
+      transform: scale(1.04);
+    }
+
+    .service-tag {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background-color: rgba(23, 26, 30, 0.85);
+      color: #FFFFFF;
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .service-content {
+      padding: 26px 24px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .service-title {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+
+    .service-subtitle {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--cordeiro-orange);
+      margin-bottom: 14px;
+    }
+
+    .service-desc {
+      font-size: 0.94rem;
+      color: var(--text-body);
+      line-height: 1.6;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .service-features {
+      list-style: none;
+      padding-top: 16px;
+      border-top: 1px solid var(--border-subtle);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .service-feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 0.85rem;
+      color: var(--text-main);
+    }
+
+    .service-feature-item span {
+      color: var(--cordeiro-orange);
+      font-weight: bold;
+    }
+
+    /* ============================================================
+       SIMULADOR & ESTIMADOR DE VIABILIDADE
+    ============================================================ */
+    .sim-card-wrapper {
+      background-color: #FFFFFF;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 44px;
+      box-shadow: var(--shadow-card);
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .sim-tabs {
+      display: flex;
+      border-bottom: 1px solid var(--border-light);
+      margin-bottom: 34px;
+    }
+
+    .sim-tab-button {
+      flex: 1;
+      text-align: center;
+      padding: 14px 20px;
+      font-family: var(--font-display);
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      background: none;
+      border: none;
+      border-bottom: 3px solid transparent;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .sim-tab-button:hover {
+      color: var(--text-main);
+    }
+
+    .sim-tab-button.active {
+      color: var(--cordeiro-orange);
+      border-bottom-color: var(--cordeiro-orange);
+    }
+
+    .sim-slider-block {
+      margin-bottom: 32px;
+    }
+
+    .sim-slider-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 12px;
+    }
+
+    .sim-slider-title {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .sim-value-box {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--cordeiro-orange);
+    }
+
+    input[type="range"] {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 8px;
+      border-radius: 4px;
+      background: #EAE6DD;
+      outline: none;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--cordeiro-orange);
+      cursor: pointer;
+      border: 3px solid #FFFFFF;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .sim-output-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      background-color: var(--bg-main);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+
+    .sim-output-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sim-output-label {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    .sim-output-value {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    .sim-output-desc {
+      font-size: 0.8rem;
+      color: var(--text-body);
+      margin-top: 4px;
+    }
+
+    .sim-disclaimer {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      text-align: center;
+      margin-bottom: 26px;
+    }
+
+    .sim-cta-wrap {
+      text-align: center;
+    }
+
+    /* ============================================================
+       PROJETOS REALIZADOS (CASES REAIS)
+    ============================================================ */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .project-card {
+      background-color: #FFFFFF;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 26px 22px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .project-tag {
+      font-family: var(--font-display);
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--cordeiro-orange);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 6px;
+    }
+
+    .project-title {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 4px;
+    }
+
+    .project-location {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+
+    .project-details {
+      font-size: 0.88rem;
+      color: var(--text-body);
+      line-height: 1.55;
+      margin-top: auto;
+      padding-top: 14px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    /* ============================================================
+       PRESENÇA REGIONAL: CIDADES EM MINAS GERAIS
+    ============================================================ */
+    .cities-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .city-card {
+      background-color: #FFFFFF;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 32px 28px;
+      box-shadow: var(--shadow-subtle);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .city-role {
+      font-family: var(--font-display);
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--cordeiro-orange);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 6px;
+    }
+
+    .city-name {
+      font-family: var(--font-display);
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 12px;
+    }
+
+    .city-address {
+      font-size: 0.92rem;
+      color: var(--text-body);
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .city-phone {
+      font-family: var(--font-display);
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-top: auto;
+      padding-top: 16px;
+      border-top: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* ============================================================
+       FAQ (PERGUNTAS FREQUENTES)
+    ============================================================ */
+    .faq-wrapper {
+      max-width: 820px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .faq-item {
+      background-color: #FFFFFF;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .faq-question {
+      padding: 20px 24px;
+      font-family: var(--font-display);
+      font-size: 1.02rem;
+      font-weight: 700;
+      color: var(--text-main);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .faq-toggle {
+      font-size: 1.25rem;
+      color: var(--cordeiro-orange);
+      font-weight: 400;
+      transition: var(--transition);
+    }
+
+    .faq-item.active .faq-toggle {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      padding: 0 24px;
+      color: var(--text-body);
+      font-size: 0.94rem;
+      line-height: 1.65;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 280px;
+      padding-bottom: 22px;
+    }
+
+    /* ============================================================
+       CONTATO & FORMULÁRIO DE ORÇAMENTO
+    ============================================================ */
+    .contact-card-box {
+      background-color: #FFFFFF;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 48px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 52px;
+      align-items: flex-start;
+    }
+
+    .contact-info-block h3 {
+      font-family: var(--font-display);
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 14px;
+    }
+
+    .contact-info-block p {
+      font-size: 1rem;
+      color: var(--text-body);
+      line-height: 1.65;
+      margin-bottom: 28px;
+    }
+
+    .contact-details-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .contact-detail-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .contact-icon-box {
+      width: 32px;
+      height: 32px;
+      background-color: var(--cordeiro-orange-soft);
+      color: var(--cordeiro-orange);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .contact-detail-text strong {
+      display: block;
+      color: var(--text-main);
+      font-size: 0.92rem;
+      margin-bottom: 2px;
+    }
+
+    .contact-detail-text span {
+      font-size: 0.88rem;
+      color: var(--text-body);
+    }
+
+    /* Form */
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-label {
+      font-family: var(--font-display);
+      font-size: 0.84rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .form-input, .form-select {
+      background-color: var(--bg-main);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      padding: 12px 16px;
+      font-family: var(--font-body);
+      font-size: 0.94rem;
+      color: var(--text-main);
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .form-input:focus, .form-select:focus {
+      background-color: #FFFFFF;
+      border-color: var(--cordeiro-orange);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    /* ============================================================
+       RODAPÉ INSTITUCIONAL
+    ============================================================ */
+    .footer {
+      background-color: var(--bg-dark-section);
+      color: var(--text-light-muted);
+      padding: 60px 0 32px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 0.9rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+      gap: 40px;
+      margin-bottom: 48px;
+    }
+
+    .footer-title {
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 18px;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links a {
+      color: var(--text-light-muted);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .footer-links a:hover {
+      color: var(--cordeiro-orange);
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 28px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.82rem;
+    }
+
+    /* Floating WhatsApp (Discreto e Elegante) */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background-color: #FFFFFF;
+      color: #128C7E;
+      border: 1px solid #C4E8DF;
+      padding: 12px 20px;
+      border-radius: var(--radius-md);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.14);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      font-family: var(--font-display);
+      font-size: 0.9rem;
+      font-weight: 700;
+      z-index: 999999;
+      cursor: pointer;
+      pointer-events: auto;
+      transition: var(--transition);
+    }
+
+    .floating-whatsapp:hover {
+      background-color: #F0FAF7;
+      border-color: #25D366;
+      color: #075E54;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+    }
+
+    .form-actions-row {
+      display: flex;
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    @media (max-width: 600px) {
+      .form-actions-row {
+        flex-direction: column;
+      }
+    }
+
+    /* Responsividade */
+    @media (max-width: 1024px) {
+      .hero-section { min-height: 620px; }
+      .hero-bg-image { width: 50%; }
+      .hero-bg-overlay {
+        background: linear-gradient(
+          90deg,
+          var(--bg-main) 0%,
+          var(--bg-main) 44%,
+          rgba(248, 247, 243, 0.92) 54%,
+          rgba(248, 247, 243, 0.45) 68%,
+          rgba(248, 247, 243, 0) 84%
+        );
+      }
+      .pillars-grid { grid-template-columns: 1fr 1fr; }
+      .services-grid { grid-template-columns: 1fr 1fr; }
+      .projects-grid { grid-template-columns: 1fr 1fr; }
+      .cities-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 900px) {
+      .hero-section {
+        min-height: auto;
+        flex-direction: column;
+        align-items: stretch;
+        padding-top: 15px;
+      }
+
+      .hero-container {
+        padding: 24px 28px 30px;
+        order: 1;
+      }
+
+      .hero-content {
+        max-width: 100%;
+      }
+
+      .hero-bg-image {
+        position: relative;
+        width: 100%;
+        height: 290px;
+        order: 2;
+        background-position: center;
+      }
+
+      .hero-bg-overlay {
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 290px;
+        background: linear-gradient(
+          180deg,
+          var(--bg-main) 0%,
+          rgba(248, 247, 243, 0.85) 12%,
+          rgba(248, 247, 243, 0) 45%
+        );
+        order: 3;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-menu { display: none; }
+      .mobile-menu-toggle { display: block; }
+      .services-grid { grid-template-columns: 1fr; }
+      .pillars-grid { grid-template-columns: 1fr; }
+      .projects-grid { grid-template-columns: 1fr; }
+      .sim-output-grid { grid-template-columns: 1fr; }
+      .sim-card-wrapper { padding: 26px 18px; }
+      .contact-card-box { padding: 26px 18px; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR (LINHA ÚNICA, CLARA E INSTITUCIONAL)
+  ============================================================ -->
+  <header class="navbar">
+    <div class="container navbar-container">
+      <a href="#inicio" class="brand-link">
+        <img src="assets/logo-symbol-hd.png" alt="Cordeiro Energia" class="brand-logo-img" />
+        <div class="brand-name-group">
+          <span class="brand-title">CORDEIRO</span>
+          <span class="brand-sub">ENERGIA</span>
+        </div>
+      </a>
+
+      <!-- Menu Principal em Linha Única -->
+      <nav>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#inicio">Início</a></li>
+          <li class="nav-item"><a href="#solucoes">Soluções</a></li>
+          <li class="nav-item"><a href="#projetos">Projetos</a></li>
+          <li class="nav-item"><a href="#empresa">A Empresa</a></li>
+          <li class="nav-item"><a href="#cidades">Cidades</a></li>
+          <li class="nav-item"><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA Único na Navbar -->
+      <div class="nav-actions">
+        <a href="#contato" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.88rem;">
+          Solicitar orçamento
+        </a>
+        <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Abrir Menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       HERO PRINCIPAL (IMAGEM EXPANSIVA & FADE SUAVE)
+  ============================================================ -->
+  <section class="hero-section" id="inicio">
+    <div class="hero-bg-image" aria-hidden="true"></div>
+    <div class="hero-bg-overlay" aria-hidden="true"></div>
+    
+    <div class="container hero-container">
+      <div class="hero-content">
+        <span class="eyebrow">Soluções Energéticas em Minas Gerais</span>
+        
+        <h1 class="hero-title">
+          Energia solar inteligente para <span>reduzir seus custos.</span>
+        </h1>
+        
+        <p class="hero-subtitle">
+          Projetos fotovoltaicos, manutenção, armazenamento e mobilidade elétrica para residências, empresas e propriedades rurais.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#contato" class="btn btn-primary">
+            Solicitar orçamento
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=5538997350343&text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Cordeiro%20Energia%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" onclick="openDirectWhatsApp(event)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.076-1.927-.432-1.464-.604-2.42-2.072-2.493-2.169-.073-.097-.591-.786-.591-1.498 0-.712.373-1.062.506-1.206.133-.144.29-.18.387-.18.096 0 .193.001.277.005.09.004.21-.034.33.252.12.287.411 1.002.447 1.075.036.073.06.157.012.253-.048.096-.072.156-.144.24-.072.084-.153.188-.218.252-.073.072-.149.15-.064.296.084.144.375.617.805.999.553.492 1.018.644 1.163.716.144.072.229.06.313-.036.084-.096.362-.421.458-.565.096-.144.193-.12.325-.072.133.048.844.398.989.47.144.072.241.108.277.169.036.06.036.349-.108.754z"/></svg>
+            Falar no WhatsApp
+          </a>
+        </div>
+
+        <div class="hero-badges-list">
+          <div class="hero-badge-item">
+            <svg class="hero-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Engenharia especializada com responsável técnico registrado no CREA-MG</span>
+          </div>
+          <div class="hero-badge-item">
+            <svg class="hero-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Presença regional física com sede em Curvelo e atuação em Montes Claros e Jaíba</span>
+          </div>
+          <div class="hero-badge-item">
+            <svg class="hero-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Homologação oficial e conexão segura com a concessionária CEMIG</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       A EMPRESA (SEÇÃO INSTITUCIONAL & HUMANA)
+  ============================================================ -->
+  <section class="section section-light" id="empresa">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Institucional</span>
+        <h2 class="section-title">Energia que gera resultado e confiança.</h2>
+        <p class="section-desc" style="max-width: 820px;">
+          Com sede matriz em Curvelo e atendimento especializado em Montes Claros e Jaíba, o Grupo Cordeiro Energia atua com seriedade técnica em todas as etapas: desde o estudo de viabilidade e projeto elétrico até a instalação, homologação e manutenção preventiva.
+        </p>
+      </div>
+
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <span class="pillar-num">01</span>
+          <h3 class="pillar-title">Engenharia Especializada</h3>
+          <p class="pillar-desc">
+            Dimensionamento técnico rigoroso conduzido por engenheiros qualificados, garantindo a máxima segurança elétrica e estrutural da sua usina.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <span class="pillar-num">02</span>
+          <h3 class="pillar-title">Atendimento Regional</h3>
+          <p class="pillar-desc">
+            Equipe presencial e suporte próximo no interior de Minas Gerais, facilitando visitas técnicas, vistorias e atendimento comercial ágil.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <span class="pillar-num">03</span>
+          <h3 class="pillar-title">Projetos Personalizados</h3>
+          <p class="pillar-desc">
+            Cada cliente recebe uma solução desenhada exatamente para a sua necessidade, seja para uma casa familiar, uma indústria ou irrigação rural.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <span class="pillar-num">04</span>
+          <h3 class="pillar-title">Acompanhamento Técnico</h3>
+          <p class="pillar-desc">
+            Compromisso de longo prazo através da divisão Cordeiro Service, com vistorias periódicas, limpeza técnica e suporte contínuo.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SOLUÇÕES E SERVIÇOS (FOTOS REAIS & CONCRETAS)
+  ============================================================ -->
+  <section class="section" id="solucoes">
+    <div class="container">
+      <div class="section-header center">
+        <span class="eyebrow">Nossas Soluções</span>
+        <h2 class="section-title">Atuação Completa no Setor Energético</h2>
+        <p class="section-desc">
+          Do projeto fotovoltaico tradicional até serviços de manutenção, armazenamento em baterias e mobilidade elétrica.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- 1. Cordeiro Energia -->
+        <div class="service-card">
+          <div class="service-image-box">
+            <img src="assets/rooftop-commercial.jpg" alt="Instalação de painéis solares em telhado comercial" class="service-image" />
+            <span class="service-tag">Geração Fotovoltaica</span>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Cordeiro Energia</h3>
+            <div class="service-subtitle">Projetos e Instalação Fotovoltaica</div>
+            <p class="service-desc">
+              Sistemas de energia solar conectados à rede para residências, pequenos comércios, indústrias e fazendas. Reduza significativamente a conta de energia e gere previsibilidade financeira para o seu negócio.
+            </p>
+            <ul class="service-features">
+              <li class="service-feature-item"><span>•</span> Projetos residenciais, comerciais e industriais</li>
+              <li class="service-feature-item"><span>•</span> Usinas em telhados cerâmicos, metálicos e solo</li>
+              <li class="service-feature-item"><span>•</span> Equipamentos certificados pelo INMETRO</li>
+              <li class="service-feature-item"><span>•</span> Homologação completa junto à CEMIG</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 2. Cordeiro Service -->
+        <div class="service-card">
+          <div class="service-image-box">
+            <img src="assets/service-maintenance.jpg" alt="Técnico realizando manutenção em painéis solares" class="service-image" />
+            <span class="service-tag">Operação & Manutenção</span>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Cordeiro Service</h3>
+            <div class="service-subtitle">Manutenção e Lavagem Técnica</div>
+            <p class="service-desc">
+              Preserve o rendimento e a vida útil dos seus painéis solares. Realizamos lavagem técnica com produtos adequados, inspeção de cabeamento, revisão de inversores e diagnóstico preventivo de falhas.
+            </p>
+            <ul class="service-features">
+              <li class="service-feature-item"><span>•</span> Lavagem técnica que recupera a capacidade de geração</li>
+              <li class="service-feature-item"><span>•</span> Monitoramento contínuo de desempenho</li>
+              <li class="service-feature-item"><span>•</span> Inspeção elétrica de inversores e conexões</li>
+              <li class="service-feature-item"><span>•</span> Atendimento para usinas Cordeiro ou de terceiros</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 3. Sistemas BESS -->
+        <div class="service-card">
+          <div class="service-image-box">
+            <img src="assets/bess-industrial.jpg" alt="Equipamentos de armazenamento de energia em baterias BESS" class="service-image" />
+            <span class="service-tag">Armazenamento</span>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Sistemas BESS</h3>
+            <div class="service-subtitle">Armazenamento de Energia em Baterias</div>
+            <p class="service-desc">
+              Armazene a energia excedente gerada durante o dia para uso nos horários de maior custo tarifário ou garanta proteção contra quedas e instabilidades da rede elétrica em atividades essenciais.
+            </p>
+            <ul class="service-features">
+              <li class="service-feature-item"><span>•</span> Autonomia operacional durante quedas de energia</li>
+              <li class="service-feature-item"><span>•</span> Redução do impacto tarifário no horário de ponta</li>
+              <li class="service-feature-item"><span>•</span> Baterias industriais com tecnologia segura</li>
+              <li class="service-feature-item"><span>•</span> Ideal para clínicas, agronegócio e indústrias</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 4. Fast Track -->
+        <div class="service-card">
+          <div class="service-image-box">
+            <img src="assets/hero-solar-brazil.jpg" alt="Sistema fotovoltaico instalado em residência" class="service-image" />
+            <span class="service-tag">Agilidade</span>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Fast Track</h3>
+            <div class="service-subtitle">Aprovação Acelerada de Projetos</div>
+            <p class="service-desc">
+              Fluxo técnico estruturado para agilizar a documentação, aprovação do parecer de acesso e ligação à rede da concessionária para sistemas de até 7,5 kW, reduzindo prazos de implantação.
+            </p>
+            <ul class="service-features">
+              <li class="service-feature-item"><span>•</span> Menos burocracia na aprovação do projeto</li>
+              <li class="service-feature-item"><span>•</span> Agilidade na vistoria e troca do medidor</li>
+              <li class="service-feature-item"><span>•</span> Documentação técnica acompanhada por engenheiros</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 5. Coenergy -->
+        <div class="service-card">
+          <div class="service-image-box">
+            <img src="assets/solar-farm-ground.jpg" alt="Fazenda solar em solo com múltiplos painéis" class="service-image" />
+            <span class="service-tag">Sem Obras</span>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Coenergy</h3>
+            <div class="service-subtitle">Energia Solar por Assinatura</div>
+            <p class="service-desc">
+              Para quem deseja reduzir custos de energia sem realizar investimentos em equipamentos ou obras no imóvel. A energia é gerada em fazendas solares e o desconto é aplicado diretamente na sua fatura da CEMIG.
+            </p>
+            <ul class="service-features">
+              <li class="service-feature-item"><span>•</span> Sem necessidade de instalar placas no telhado</li>
+              <li class="service-feature-item"><span>•</span> Sem custo de investimento inicial</li>
+              <li class="service-feature-item"><span>•</span> Desconto creditado direto na conta de energia</li>
+              <li class="service-feature-item"><span>•</span> Indicado para apartamentos e imóveis alugados</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 6. CoenergyGO -->
+        <div class="service-card">
+          <div class="service-image-box">
+            <img src="assets/ev-charging.jpg" alt="Veículo elétrico sendo recarregado em estação de eletroposto" class="service-image" />
+            <span class="service-tag">Mobilidade Elétrica</span>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">CoenergyGO</h3>
+            <div class="service-subtitle">Infraestrutura e Eletropostos</div>
+            <p class="service-desc">
+              Estações de recarga rápida para veículos elétricos e híbridos. Ponto de recarga ativo em Curvelo na Av. Bias Fortes, nº 1922, além de projetos dedicados de carregadores residenciais e empresariais.
+            </p>
+            <ul class="service-features">
+              <li class="service-feature-item"><span>•</span> Eletroposto em Curvelo na Av. Bias Fortes, 1922</li>
+              <li class="service-feature-item"><span>•</span> Recargas rápidas, práticas e seguras</li>
+              <li class="service-feature-item"><span>•</span> Soluções para frotas corporativas e condomínios</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SIMULADOR E ESTIMADOR DE VIABILIDADE
+  ============================================================ -->
+  <section class="section section-light" id="simulador">
+    <div class="container">
+      <div class="section-header center">
+        <span class="eyebrow">Simulador de Viabilidade</span>
+        <h2 class="section-title">Estime o Potencial de Economia</h2>
+        <p class="section-desc">
+          Compare as duas modalidades de acordo com o consumo atual da sua conta de luz da CEMIG.
+        </p>
+      </div>
+
+      <div class="sim-card-wrapper">
+        <div class="sim-tabs">
+          <button class="sim-tab-button active" id="tab-opt-propria" onclick="switchSimOption('propria')">
+            Instalação de Usina Própria
+          </button>
+          <button class="sim-tab-button" id="tab-opt-assinatura" onclick="switchSimOption('assinatura')">
+            Assinatura Solar Coenergy (Sem Obras)
+          </button>
+        </div>
+
+        <div class="sim-slider-block">
+          <div class="sim-slider-row">
+            <div class="sim-slider-title">Valor médio da sua conta de luz (CEMIG):</div>
+            <div class="sim-value-box">
+              R$ <span id="display-bill">1.200</span>
+            </div>
+          </div>
+          <input type="range" id="input-bill-range" min="300" max="15000" step="100" value="1200" oninput="calculateEstimates()" />
+        </div>
+
+        <div class="sim-output-grid">
+          <div class="sim-output-item">
+            <span class="sim-output-label">Economia Mensal Estimada</span>
+            <div class="sim-output-value" id="val-monthly-economy" style="color: var(--cordeiro-orange);">R$ 1.050</div>
+            <span class="sim-output-desc" id="desc-monthly-economy">Redução significativa no valor pago à CEMIG</span>
+          </div>
+          <div class="sim-output-item">
+            <span class="sim-output-label">Economia Anual Estimada</span>
+            <div class="sim-output-value" id="val-annual-economy">R$ 12.600</div>
+            <span class="sim-output-desc">Recurso financeiro preservado ao longo de 12 meses</span>
+          </div>
+        </div>
+
+        <p class="sim-disclaimer">
+          * Valores de referência calculados com base nas tarifas vigentes da CEMIG para fins informativos. O dimensionamento definitivo é realizado por nossa equipe de engenharia após análise técnica gratuita da sua conta de luz.
+        </p>
+
+        <div class="sim-cta-wrap">
+          <a href="#contato" class="btn btn-primary">
+            Solicitar estudo de viabilidade gratuito
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJETOS REALIZADOS (CASES REAIS)
+  ============================================================ -->
+  <section class="section" id="projetos">
+    <div class="container">
+      <div class="section-header center">
+        <span class="eyebrow">Projetos Executados</span>
+        <h2 class="section-title">Experiência Prática em Minas Gerais</h2>
+        <p class="section-desc">
+          Conheça alguns dos projetos implantados pelo Grupo Cordeiro Energia em diferentes municípios da nossa região.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <span class="project-tag">Comercial</span>
+          <h3 class="project-title">Mercearia Nivete</h3>
+          <div class="project-location">📍 Curvelo - MG</div>
+          <p class="project-details">
+            Sistema fotovoltaico instalado sobre cobertura metálica, reduzindo o custo operacional de refrigeração e balcões frios.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <span class="project-tag">Comercial & Agro</span>
+          <h3 class="project-title">Mercearia Robinho</h3>
+          <div class="project-location">📍 Corinto - MG</div>
+          <p class="project-details">
+            Projeto dimensionado para alta demanda de consumo e estabilidade energética nas operações diárias.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <span class="project-tag">Corporativo</span>
+          <h3 class="project-title">Cooperativa CMM</h3>
+          <div class="project-location">📍 Três Marias - MG</div>
+          <p class="project-details">
+            Usinas fotovoltaicas projetadas para atendimento institucional e controle rigoroso de despesas elétricas.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <span class="project-tag">Logística</span>
+          <h3 class="project-title">Distribuidora Curvelo</h3>
+          <div class="project-location">📍 Curvelo - MG</div>
+          <p class="project-details">
+            Instalação dimensionada para atender galpão de armazenagem e câmaras de estocagem de produtos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CIDADES & PRESENÇA REGIONAL
+  ============================================================ -->
+  <section class="section section-light" id="cidades">
+    <div class="container">
+      <div class="section-header center">
+        <span class="eyebrow">Presença Regional</span>
+        <h2 class="section-title">Estrutura e Atendimento em MG</h2>
+        <p class="section-desc">
+          Bases físicas e engenharia atuante em pontos estratégicos do estado para atender com proximidade e agilidade.
+        </p>
+      </div>
+
+      <div class="cities-grid">
+        <div class="city-card">
+          <span class="city-role">Sede Matriz</span>
+          <h3 class="city-name">Curvelo - MG</h3>
+          <p class="city-address">
+            <strong>Matriz:</strong> Rua Bandeirantes, 28 - Bela Vista<br>
+            <strong>Eletroposto CoenergyGO:</strong> Av. Bias Fortes, nº 1922<br>
+            Segunda a Sexta: 07:30 às 18:00 | Sábado: 08:00 às 12:00
+          </p>
+          <div class="city-phone">
+            <span>📞</span> (38) 9 9735-0343
+          </div>
+        </div>
+
+        <div class="city-card">
+          <span class="city-role">Polo Norte de Minas</span>
+          <h3 class="city-name">Montes Claros - MG</h3>
+          <p class="city-address">
+            Atendimento comercial e engenharia para residências, empresas e indústrias em todo o Norte de Minas Gerais.<br>
+            Segunda a Sexta: 08:00 às 18:00
+          </p>
+          <div class="city-phone">
+            <span>📞</span> (38) 9 9260-5508
+          </div>
+        </div>
+
+        <div class="city-card">
+          <span class="city-role">Polo Agrícola & Irrigação</span>
+          <h3 class="city-name">Jaíba - MG</h3>
+          <p class="city-address">
+            Atendimento especializado para o agronegócio, irrigação, fazendas e usinas de solo no Projeto Jaíba.<br>
+            Segunda a Sexta: 08:00 às 18:00
+          </p>
+          <div class="city-phone">
+            <span>📞</span> (38) 9 9735-0343
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FAQ (PERGUNTAS FREQUENTES)
+  ============================================================ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header center">
+        <span class="eyebrow">Dúvidas Frequentes</span>
+        <h2 class="section-title">Perguntas sobre Energia Solar</h2>
+        <p class="section-desc">
+          Esclarecimentos sobre funcionamento, economia, conexão com a CEMIG e manutenção.
+        </p>
+      </div>
+
+      <div class="faq-wrapper" id="faq-list">
+        <!-- Renderizado dinamicamente via JS a partir do config.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTATO & FORMULÁRIO DE ORÇAMENTO
+  ============================================================ -->
+  <section class="section section-light" id="contato">
+    <div class="container">
+      <div class="contact-card-box">
+        <div class="contact-grid">
+          <div class="contact-info-block">
+            <span class="eyebrow">Atendimento Comercial</span>
+            <h3>Fale com Nossa Equipe Técnica</h3>
+            <p>
+              Envie sua mensagem ou os dados da sua fatura para receber um estudo inicial de viabilidade técnica e financeira sem compromisso.
+            </p>
+
+            <div class="contact-details-list">
+              <div class="contact-detail-item">
+                <div class="contact-icon-box">📍</div>
+                <div class="contact-detail-text">
+                  <strong>Endereço da Matriz:</strong>
+                  <span>Rua Bandeirantes, 28 - Bela Vista, Curvelo/MG — CEP 35790-000</span>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon-box">📞</div>
+                <div class="contact-detail-text">
+                  <strong>Telefones Comerciais:</strong>
+                  <span>(38) 9 9735-0343 | (38) 9 9260-5508</span>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon-box">✉️</div>
+                <div class="contact-detail-text">
+                  <strong>E-mail Institucional:</strong>
+                  <span>comercial@cordeiroenergia.com.br</span>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon-box">🕐</div>
+                <div class="contact-detail-text">
+                  <strong>Horário de Funcionamento:</strong>
+                  <span>Seg – Sex: 07:30 às 18:00 | Sáb: 08:00 às 12:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulário Limpo -->
+          <form class="contact-form" onsubmit="handleFormSubmission(event)">
+            <div class="form-group">
+              <label class="form-label" for="txt-nome">Nome Completo *</label>
+              <input type="text" id="txt-nome" class="form-input" placeholder="Seu nome" required />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="txt-telefone">WhatsApp com DDD *</label>
+                <input type="tel" id="txt-telefone" class="form-input" placeholder="(38) 99999-9999" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="sel-cidade">Sua Cidade *</label>
+                <select id="sel-cidade" class="form-select" required>
+                  <option value="" disabled selected>Selecione</option>
+                  <option value="Curvelo">Curvelo - MG</option>
+                  <option value="Montes Claros">Montes Claros - MG</option>
+                  <option value="Jaíba">Jaíba - MG</option>
+                  <option value="Corinto">Corinto - MG</option>
+                  <option value="Diamantina">Diamantina - MG</option>
+                  <option value="Sete Lagoas">Sete Lagoas - MG</option>
+                  <option value="Três Marias">Três Marias - MG</option>
+                  <option value="Outro Município em MG">Outro Município em MG</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="txt-gasto">Valor Médio da Fatura (R$)</label>
+                <input type="text" id="txt-gasto" class="form-input" placeholder="Ex: R$ 1.200" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="sel-interesse">Interesse</label>
+                <select id="sel-interesse" class="form-select">
+                  <option value="Instalação Fotovoltaica Própria">Instalação Fotovoltaica Própria</option>
+                  <option value="Energia Solar por Assinatura Coenergy">Energia Solar por Assinatura Coenergy</option>
+                  <option value="Manutenção de Usina (Cordeiro Service)">Manutenção / Lavagem de Usina</option>
+                  <option value="Armazenamento BESS">Armazenamento BESS</option>
+                  <option value="Eletropostos / Mobilidade Elétrica">Mobilidade Elétrica</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-actions-row">
+              <button type="submit" class="btn btn-primary" style="flex: 1.1;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.076-1.927-.432-1.464-.604-2.42-2.072-2.493-2.169-.073-.097-.591-.786-.591-1.498 0-.712.373-1.062.506-1.206.133-.144.29-.18.387-.18.096 0 .193.001.277.005.09.004.21-.034.33.252.12.287.411 1.002.447 1.075.036.073.06.157.012.253-.048.096-.072.156-.144.24-.072.084-.153.188-.218.252-.073.072-.149.15-.064.296.084.144.375.617.805.999.553.492 1.018.644 1.163.716.144.072.229.06.313-.036.084-.096.362-.421.458-.565.096-.144.193-.12.325-.072.133.048.844.398.989.47.144.072.241.108.277.169.036.06.036.349-.108.754z"/></svg>
+                Enviar dados no WhatsApp
+              </button>
+              <button type="button" class="btn btn-whatsapp" style="flex: 1;" onclick="openDirectWhatsApp(event)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.076-1.927-.432-1.464-.604-2.42-2.072-2.493-2.169-.073-.097-.591-.786-.591-1.498 0-.712.373-1.062.506-1.206.133-.144.29-.18.387-.18.096 0 .193.001.277.005.09.004.21-.034.33.252.12.287.411 1.002.447 1.075.036.073.06.157.012.253-.048.096-.072.156-.144.24-.072.084-.153.188-.218.252-.073.072-.149.15-.064.296.084.144.375.617.805.999.553.492 1.018.644 1.163.716.144.072.229.06.313-.036.084-.096.362-.421.458-.565.096-.144.193-.12.325-.072.133.048.844.398.989.47.144.072.241.108.277.169.036.06.036.349-.108.754z"/></svg>
+                Falar direto no WhatsApp
+              </button>
+            </div>
+            <span style="font-size: 0.78rem; color: var(--text-muted); text-align: center;">
+              Dica: Se preferir não preencher agora, clique em <strong>Falar direto no WhatsApp</strong> para conversar diretamente com nosso consultor.
+            </span>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       RODAPÉ INSTITUCIONAL
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+            <img src="assets/logo-symbol-hd.png" alt="Cordeiro Energia" style="height: 32px; width: auto;" />
+            <span style="font-family: var(--font-display); font-size: 1.1rem; font-weight: 800; color: #FFFFFF;">
+              CORDEIRO <span style="color: var(--cordeiro-orange);">ENERGIA</span>
+            </span>
+          </div>
+          <p style="line-height: 1.6; margin-bottom: 16px;">
+            Projetos fotovoltaicos, manutenção, armazenamento e mobilidade elétrica para residências, empresas e agronegócio em Minas Gerais.
+          </p>
+          <div style="display: flex; gap: 14px;">
+            <a href="https://www.instagram.com/cordeiroenergia/" target="_blank" style="color: #FFFFFF; text-decoration: none;">Instagram ↗</a>
+            <a href="https://www.facebook.com/cordeiroenergia" target="_blank" style="color: #FFFFFF; text-decoration: none;">Facebook ↗</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Soluções</h4>
+          <ul class="footer-links">
+            <li><a href="#solucoes">Cordeiro Energia (Instalação)</a></li>
+            <li><a href="#solucoes">Cordeiro Service (Manutenção)</a></li>
+            <li><a href="#solucoes">Sistemas BESS (Armazenamento)</a></li>
+            <li><a href="#solucoes">Fast Track CEMIG</a></li>
+            <li><a href="#solucoes">Coenergy por Assinatura</a></li>
+            <li><a href="#solucoes">CoenergyGO Eletropostos</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Institucional</h4>
+          <ul class="footer-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#empresa">A Empresa</a></li>
+            <li><a href="#projetos">Projetos Executados</a></li>
+            <li><a href="#cidades">Presença Regional</a></li>
+            <li><a href="#simulador">Simulador</a></li>
+            <li><a href="#faq">Dúvidas Frequentes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Atendimento</h4>
+          <p style="margin-bottom: 8px;">
+            <strong>Matriz Curvelo:</strong><br>
+            Rua Bandeirantes, 28 - Bela Vista<br>
+            CEP 35790-000
+          </p>
+          <p style="margin-bottom: 8px;">
+            <strong>Telefones:</strong><br>
+            (38) 9 9735-0343<br>
+            (38) 9 9260-5508
+          </p>
+          <p>
+            <strong>E-mail:</strong><br>
+            comercial@cordeiroenergia.com.br
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Cordeiro Energia Solar. Todos os direitos reservados.
+        </div>
+        <div>
+          Engenharia com registro no CREA-MG · Conexão homologada CEMIG
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão Flutuante de WhatsApp Discreto e Funcional -->
+  <a href="https://api.whatsapp.com/send?phone=5538997350343&text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Cordeiro%20Energia%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" class="floating-whatsapp" id="btn-floating-whatsapp" onclick="openDirectWhatsApp(event)" title="Falar no WhatsApp">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.076-1.927-.432-1.464-.604-2.42-2.072-2.493-2.169-.073-.097-.591-.786-.591-1.498 0-.712.373-1.062.506-1.206.133-.144.29-.18.387-.18.096 0 .193.001.277.005.09.004.21-.034.33.252.12.287.411 1.002.447 1.075.036.073.06.157.012.253-.048.096-.072.156-.144.24-.072.084-.153.188-.218.252-.073.072-.149.15-.064.296.084.144.375.617.805.999.553.492 1.018.644 1.163.716.144.072.229.06.313-.036.084-.096.362-.421.458-.565.096-.144.193-.12.325-.072.133.048.844.398.989.47.144.072.241.108.277.169.036.06.036.349-.108.754z"/></svg>
+    <span>Falar no WhatsApp</span>
+  </a>
+
+  <!-- ============================================================
+       SCRIPTS & LÓGICA DO ESTIMADOR
+  ============================================================ -->
+  <script>
+    let simMode = 'propria'; // 'propria' ou 'assinatura'
+
+    document.addEventListener('DOMContentLoaded', () => {
+      renderFaqList();
+      calculateEstimates();
+    });
+
+    function toggleMobileMenu() {
+      const menu = document.querySelector('.nav-menu');
+      if (menu) {
+        menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        menu.style.flexDirection = 'column';
+        menu.style.position = 'absolute';
+        menu.style.top = '100%';
+        menu.style.left = '0';
+        menu.style.width = '100%';
+        menu.style.backgroundColor = '#FFFFFF';
+        menu.style.padding = '20px 28px';
+        menu.style.boxShadow = '0 8px 20px rgba(0,0,0,0.08)';
+        menu.style.borderBottom = '1px solid #E5E1D7';
+      }
+    }
+
+    function switchSimOption(opt) {
+      simMode = opt;
+      document.getElementById('tab-opt-propria').classList.toggle('active', opt === 'propria');
+      document.getElementById('tab-opt-assinatura').classList.toggle('active', opt === 'assinatura');
+      calculateEstimates();
+    }
+
+    function calculateEstimates() {
+      const rangeInput = document.getElementById('input-bill-range');
+      const bill = parseFloat(rangeInput.value) || 1200;
+
+      document.getElementById('display-bill').textContent = bill.toLocaleString('pt-BR');
+
+      let monthlyEconomy = 0;
+      let annualEconomy = 0;
+      let descText = "";
+
+      if (simMode === 'propria') {
+        // Estimativa para usina própria (~85-90% de redução no boleto CEMIG)
+        monthlyEconomy = bill * 0.88;
+        annualEconomy = monthlyEconomy * 12;
+        descText = "Redução expressiva com geração fotovoltaica no seu próprio imóvel";
+      } else {
+        // Estimativa para assinatura Coenergy (~15-20% de desconto sem obras)
+        monthlyEconomy = bill * 0.18;
+        annualEconomy = monthlyEconomy * 12;
+        descText = "Desconto mensal creditado na sua conta CEMIG sem obras ou placas";
+      }
+
+      document.getElementById('val-monthly-economy').textContent = monthlyEconomy.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 });
+      document.getElementById('val-annual-economy').textContent = annualEconomy.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 });
+      document.getElementById('desc-monthly-economy').textContent = descText;
+    }
+
+    function renderFaqList() {
+      const container = document.getElementById('faq-list');
+      if (!container || !siteConfig.faqs) return;
+
+      container.innerHTML = siteConfig.faqs.map((f, idx) => `
+        <div class="faq-item ${idx === 0 ? 'active' : ''}">
+          <div class="faq-question" onclick="toggleFaqAccordion(this)">
+            <span>${f.question}</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            ${f.answer.replace(/\\*\\*(.*?)\\*\\*/g, '<strong>$1</strong>')}
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function toggleFaqAccordion(el) {
+      const parent = el.closest('.faq-item');
+      parent.classList.toggle('active');
+    }
+
+    function openDirectWhatsApp(e) {
+      if (e) e.preventDefault();
+      const phone = (window.siteConfig && siteConfig.contacts && siteConfig.contacts.whatsappMatriz) ? siteConfig.contacts.whatsappMatriz : "5538997350343";
+      const msg = encodeURIComponent("Olá! Vim pelo site da Cordeiro Energia e gostaria de mais informações.");
+      const url = `https://api.whatsapp.com/send?phone=${phone}&text=${msg}`;
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
+
+    function handleFormSubmission(e) {
+      e.preventDefault();
+      const nome = document.getElementById('txt-nome').value.trim();
+      const telefone = document.getElementById('txt-telefone').value.trim();
+      const cidade = document.getElementById('sel-cidade').value;
+      const gasto = document.getElementById('txt-gasto').value.trim() || "Não informado";
+      const interesse = document.getElementById('sel-interesse').value;
+
+      const phone = (window.siteConfig && siteConfig.contacts && siteConfig.contacts.whatsappMatriz) ? siteConfig.contacts.whatsappMatriz : "5538997350343";
+
+      const texto = `Olá! Vim pelo site da Cordeiro Energia e gostaria de mais informações e solicitar um orçamento:
+
+• *Nome:* ${nome}
+• *WhatsApp:* ${telefone}
+• *Cidade:* ${cidade}
+• *Gasto Médio CEMIG:* ${gasto}
+• *Interesse:* ${interesse}
+
+Aguardo o contato para análise técnica gratuita da minha conta de energia.`;
+
+      const url = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(texto)}`;
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
+  </script>
+</body>
+</html>
